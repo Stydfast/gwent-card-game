@@ -36,6 +36,6 @@ describe('getColorFromValue', () => {
 
   test('Black', () => {
     props.powerBalance = 'equal';
-    expect(getColorFromValue(props)).toEqual('#000');
+    expect(getColorFromValue(props)).toEqual('#1e1d1b');
   });
 });

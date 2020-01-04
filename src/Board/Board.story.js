@@ -1,5 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { Board as BoardBackground } from '.';
+import { Board } from '.';
 
-storiesOf('Board', module).add('Background', () => <BoardBackground />);
+storiesOf('Board', module).add('Background', () => <Board />);

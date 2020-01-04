@@ -1,7 +1,7 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { radios } from '@storybook/addon-knobs';
-import { CardType as CardTypeComponent } from '.';
+import { CardType } from '.';
 
 const options = {
   Melee: 'type-melee',
@@ -10,4 +10,4 @@ const options = {
   MeleeRanged: 'type-melee-ranged',
 };
 
-storiesOf('Card', module).add('Card Type', () => <CardTypeComponent type={radios('Type', options, 'type-melee')} />);
+storiesOf('Card', module).add('Card Type', () => <CardType type={radios('Type', options, 'type-melee')} />);

@@ -8,12 +8,13 @@ import {
 } from './images';
 
 const CardTypeBackground = styled.div`
-  height: 108px;
-  width: 108px;
+  height: 105px;
+  width: 105px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('${CardTypeBackgroundImage}');
+  background-image: url('${CardTypeBackgroundImage}');
+  background-size: contain;
 `;
 
 const Type = styled.div`

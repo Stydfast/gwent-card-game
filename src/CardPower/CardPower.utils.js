@@ -16,7 +16,7 @@ const getColorFromValue = ({ powerBalance }) => {
     case 'lower':
       return '#d32f2f';
     default:
-      return '#000';
+      return '#1e1d1b';
   }
 };
 
