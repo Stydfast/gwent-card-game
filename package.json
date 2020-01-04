@@ -57,6 +57,7 @@
       "src/**/*.js",
       "!src/**/*.style.js",
       "!src/**/*.story.js",
+      "!src/**/*.constants.js",
       "!src/**/index.js"
     ]
   }
