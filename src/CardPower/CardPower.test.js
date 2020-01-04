@@ -1,4 +1,4 @@
-import { getPowerBalance, getColorFromValue } from './CardPower.helper';
+import { getPowerBalance, getColorFromValue } from './CardPower.utils';
 
 describe('getPowerBalance', () => {
   const props = {

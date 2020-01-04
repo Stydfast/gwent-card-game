@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { getColorFromValue } from './CardPower.helper';
+import { getColorFromValue } from './CardPower.utils';
 import CardPowerBackgroundImage from './images/card-power-background.png';
 
 const CardPowerBackground = styled.div`

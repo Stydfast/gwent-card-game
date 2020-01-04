@@ -1,5 +1,5 @@
 import React from 'react';
-import { getPowerBalance } from './CardPower.helper';
+import { getPowerBalance } from './CardPower.utils';
 import { CardPowerBackground } from './CardPowerBackground.style';
 
 const CardPower = props => {
