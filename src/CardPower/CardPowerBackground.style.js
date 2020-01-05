@@ -10,8 +10,7 @@ const CardPowerBackground = styled.div`
   text-align: center;
   line-height: 128px;
   font-size: 70px;
-  font-weight: bold;
-  font-family: sans-serif;
+  font-family: 'Roboto';
 `;
 
 export { CardPowerBackground };

@@ -3,17 +3,14 @@ import { Board } from '../Board';
 import { CardPower } from '../CardPower';
 import { CardType } from '../CardType';
 import { CardEffect } from '../CardEffect';
+import { CardPowerHero } from '../CardPowerHero';
 
 const MainContainer = () => (
   <Board>
-    <CardPower defaultValue="6" value="3" />
-    <CardPower defaultValue="2" value="5" />
-    <CardPower defaultValue="4" value="4" />
-    <CardType type="type-melee" />
-    <CardType type="type-ranged" />
+    <CardPower defaultValue={6} value={6} />
     <CardType type="type-siege" />
-    <CardType type="type-melee-ranged" />
     <CardEffect effect="effect-nurse" />
+    <CardPowerHero value={15} />
   </Board>
 );
 

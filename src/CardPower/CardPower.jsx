@@ -5,11 +5,7 @@ import { CardPowerBackground } from './CardPowerBackground.style';
 const CardPower = props => {
   let { value } = props;
 
-  if (value < 1) {
-    value = 1;
-  }
-
-  return <CardPowerBackground powerBalance={getPowerBalance(props)}>{value}</CardPowerBackground>;
+  return <CardPowerBackground powerBalance={getPowerBalance(props)}>{value < 1 ? 1 : value}</CardPowerBackground>;
 };
 
-export { CardPower, getPowerBalance };
+export { CardPower };
