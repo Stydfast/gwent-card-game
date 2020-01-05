@@ -15,47 +15,47 @@ describe('getCardEffect', () => {
   const props = {};
 
   test('Agile', () => {
-    props.effect = 'effect-agile';
+    props.effect = 'agile';
     expect(getCardEffect(props)).toEqual(<CardEffectAgile />);
   });
 
   test('Clone', () => {
-    props.effect = 'effect-clone';
+    props.effect = 'clone';
     expect(getCardEffect(props)).toEqual(<CardEffectClone />);
   });
 
   test('Improve', () => {
-    props.effect = 'effect-improve';
+    props.effect = 'improve';
     expect(getCardEffect(props)).toEqual(<CardEffectImprove />);
   });
 
   test('Muster', () => {
-    props.effect = 'effect-muster';
+    props.effect = 'muster';
     expect(getCardEffect(props)).toEqual(<CardEffectMuster />);
   });
 
   test('Nurse', () => {
-    props.effect = 'effect-nurse';
+    props.effect = 'nurse';
     expect(getCardEffect(props)).toEqual(<CardEffectNurse />);
   });
 
   test('Scorch', () => {
-    props.effect = 'effect-scorch';
+    props.effect = 'scorch';
     expect(getCardEffect(props)).toEqual(<CardEffectScorch />);
   });
 
   test('Spy', () => {
-    props.effect = 'effect-spy';
+    props.effect = 'spy';
     expect(getCardEffect(props)).toEqual(<CardEffectSpy />);
   });
 
   test('Warhorn', () => {
-    props.effect = 'effect-warhorn';
+    props.effect = 'warhorn';
     expect(getCardEffect(props)).toEqual(<CardEffectWarhorn />);
   });
 
   test('Invalid value', () => {
-    props.effect = 'effect-undefined';
+    props.effect = 'undefined';
     expect(getCardEffect(props)).toBeNull;
   });
 });

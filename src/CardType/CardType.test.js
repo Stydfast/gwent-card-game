@@ -6,27 +6,27 @@ describe('getCardType', () => {
   const props = {};
 
   test('Melee', () => {
-    props.type = 'type-melee';
+    props.type = 'melee';
     expect(getCardType(props)).toEqual(<CardTypeMelee />);
   });
 
   test('Ranged', () => {
-    props.type = 'type-ranged';
+    props.type = 'ranged';
     expect(getCardType(props)).toEqual(<CardTypeRanged />);
   });
 
   test('Siege', () => {
-    props.type = 'type-siege';
+    props.type = 'siege';
     expect(getCardType(props)).toEqual(<CardTypeSiege />);
   });
 
   test('MeleeRanged', () => {
-    props.type = 'type-melee-ranged';
+    props.type = 'melee-ranged';
     expect(getCardType(props)).toEqual(<CardTypeMeleeRanged />);
   });
 
   test('Invalid value', () => {
-    props.type = 'type-undefined';
+    props.type = 'undefined';
     expect(getCardType(props)).toBeNull;
   });
 });

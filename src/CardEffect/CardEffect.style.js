@@ -11,18 +11,34 @@ import {
   CardEffectBackgroundImage,
 } from './images';
 
+const BIG = 'big';
+const NORMAL_SIZE = '28px';
+const BIG_SIZE = '50px';
+const NORMAL_EFFECT_SIZE = '24px';
+const BIG_EFFECT_SIZE = '46px';
+
+const getSize = ({ size }) => {
+  return size === BIG ? BIG_SIZE : NORMAL_SIZE;
+};
+
+const getEffectSize = ({ size }) => {
+  console.log(size);
+  return size === BIG ? BIG_EFFECT_SIZE : NORMAL_EFFECT_SIZE;
+};
+
 const CardEffectBackground = styled.div`
-  height: 105px;
-  width: 105px;
+  height: ${props => getSize(props)};
+  width: ${props => getSize(props)};
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('${CardEffectBackgroundImage}');
+  background-size: contain;
+  background-image: url('${CardEffectBackgroundImage}');
 `;
 
 const Effect = styled.div`
-  height: 90px;
-  width: 90px;
+  height: ${props => getEffectSize(props)};
+  width: ${props => getEffectSize(props)};
   background-size: contain;
   background-position: center;
 `;

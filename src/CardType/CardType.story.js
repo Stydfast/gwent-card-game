@@ -4,10 +4,10 @@ import { radios } from '@storybook/addon-knobs';
 import { CardType } from '.';
 
 const options = {
-  Melee: 'type-melee',
-  Ranged: 'type-ranged',
-  Siege: 'type-siege',
-  MeleeRanged: 'type-melee-ranged',
+  Melee: 'melee',
+  Ranged: 'ranged',
+  Siege: 'siege',
+  MeleeRanged: 'melee-ranged',
 };
 
-storiesOf('Card', module).add('Card Type', () => <CardType type={radios('Type', options, 'type-melee')} />);
+storiesOf('Card', module).add('Card Type', () => <CardType type={radios('Type', options, 'melee')} />);

@@ -20,24 +20,24 @@ import {
   CardEffectWarhorn,
 } from './CardEffect.style';
 
-const getCardEffect = ({ effect }) => {
+const getCardEffect = ({ effect, size }) => {
   switch (effect) {
     case EFFECT_AGILE:
-      return <CardEffectAgile />;
+      return <CardEffectAgile size={size} />;
     case EFFECT_CLONE:
-      return <CardEffectClone />;
+      return <CardEffectClone size={size} />;
     case EFFECT_IMPROVE:
-      return <CardEffectImprove />;
+      return <CardEffectImprove size={size} />;
     case EFFECT_MUSTER:
-      return <CardEffectMuster />;
+      return <CardEffectMuster size={size} />;
     case EFFECT_NURSE:
-      return <CardEffectNurse />;
+      return <CardEffectNurse size={size} />;
     case EFFECT_SCORCH:
-      return <CardEffectScorch />;
+      return <CardEffectScorch size={size} />;
     case EFFECT_SPY:
-      return <CardEffectSpy />;
+      return <CardEffectSpy size={size} />;
     case EFFECT_WARHORN:
-      return <CardEffectWarhorn />;
+      return <CardEffectWarhorn size={size} />;
     default:
       return;
   }

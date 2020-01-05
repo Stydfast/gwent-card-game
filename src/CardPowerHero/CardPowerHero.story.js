@@ -10,6 +10,4 @@ const options = {
   step: 1,
 };
 
-storiesOf('Card', module).add('Card Power Hero', () => (
-  <CardPowerHero value={number('Power', 5, options)} />
-));
+storiesOf('Card', module).add('Card Power Hero', () => <CardPowerHero value={number('Power', 5, options)} />);

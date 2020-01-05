@@ -1,11 +1,11 @@
-const EFFECT_AGILE = 'effect-agile';
-const EFFECT_CLONE = 'effect-clone';
-const EFFECT_IMPROVE = 'effect-improve';
-const EFFECT_MUSTER = 'effect-muster';
-const EFFECT_NURSE = 'effect-nurse';
-const EFFECT_SCORCH = 'effect-scorch';
-const EFFECT_SPY = 'effect-spy';
-const EFFECT_WARHORN = 'effect-warhorn';
+const EFFECT_AGILE = 'agile';
+const EFFECT_CLONE = 'clone';
+const EFFECT_IMPROVE = 'improve';
+const EFFECT_MUSTER = 'muster';
+const EFFECT_NURSE = 'nurse';
+const EFFECT_SCORCH = 'scorch';
+const EFFECT_SPY = 'spy';
+const EFFECT_WARHORN = 'warhorn';
 
 export {
   EFFECT_AGILE,

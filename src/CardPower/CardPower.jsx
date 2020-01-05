@@ -3,9 +3,13 @@ import { getPowerBalance } from './CardPower.utils';
 import { CardPowerBackground } from './CardPowerBackground.style';
 
 const CardPower = props => {
-  let { value } = props;
+  let { value, size } = props;
 
-  return <CardPowerBackground powerBalance={getPowerBalance(props)}>{value < 1 ? 1 : value}</CardPowerBackground>;
+  return (
+    <CardPowerBackground size={size} powerBalance={getPowerBalance(props)}>
+      {value}
+    </CardPowerBackground>
+  );
 };
 
 export { CardPower };

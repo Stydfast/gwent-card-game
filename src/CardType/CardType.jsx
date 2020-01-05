@@ -3,7 +3,7 @@ import { CardTypeBackground } from './CardType.style';
 import { getCardType } from './CardType.utils';
 
 const CardType = props => {
-  return <CardTypeBackground>{getCardType(props)}</CardTypeBackground>;
+  return <CardTypeBackground size={props.size}>{getCardType(props)}</CardTypeBackground>;
 };
 
 export { CardType };

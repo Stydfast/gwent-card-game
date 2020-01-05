@@ -4,14 +4,14 @@ import { select } from '@storybook/addon-knobs';
 import { CardEffect } from './CardEffect';
 
 const options = {
-  Agile: 'effect-agile',
-  Clone: 'effect-clone',
-  Improve: 'effect-improve',
-  Muster: 'effect-muster',
-  Nurse: 'effect-nurse',
-  Scorch: 'effect-scorch',
-  Spy: 'effect-spy',
-  Warhorn: 'effect-warhorn',
+  Agile: 'agile',
+  Clone: 'clone',
+  Improve: 'improve',
+  Muster: 'muster',
+  Nurse: 'nurse',
+  Scorch: 'scorch',
+  Spy: 'spy',
+  Warhorn: 'warhorn',
 };
 
-storiesOf('Card', module).add('Card Effect', () => <CardEffect effect={select('Effect', options, 'effect-agile')} />);
+storiesOf('Card', module).add('Card Effect', () => <CardEffect effect={select('Effect', options, 'agile')} />);

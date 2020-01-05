@@ -2,16 +2,16 @@ import React from 'react';
 import { TYPE_MELEE, TYPE_RANGED, TYPE_SIEGE, TYPE_MELEE_RANGED } from './CardType.constants';
 import { CardTypeMelee, CardTypeRanged, CardTypeSiege, CardTypeMeleeRanged } from './CardType.style';
 
-const getCardType = ({ type }) => {
+const getCardType = ({ type, size }) => {
   switch (type) {
     case TYPE_MELEE:
-      return <CardTypeMelee />;
+      return <CardTypeMelee size={size} />;
     case TYPE_RANGED:
-      return <CardTypeRanged />;
+      return <CardTypeRanged size={size} />;
     case TYPE_SIEGE:
-      return <CardTypeSiege />;
+      return <CardTypeSiege size={size} />;
     case TYPE_MELEE_RANGED:
-      return <CardTypeMeleeRanged />;
+      return <CardTypeMeleeRanged size={size} />;
     default:
       return;
   }
