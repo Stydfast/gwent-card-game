@@ -26,7 +26,7 @@ const optionsReference = {
   Geralt: 'neu-geralt',
   Yennefer: 'neu-yennefer',
   Triss: 'neu-triss',
-  Dirjksta: 'neu-dirjksta',
+  Dirjksta: 'nor-dijkstra',
   Dandelion: 'neu-dandelion',
   Fringilla: 'nil-fringilla',
 };

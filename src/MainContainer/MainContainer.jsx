@@ -1,17 +1,76 @@
 import React from 'react';
 import { Board } from '../Board';
 import { Card } from '../Card';
+import { Hand } from '../Hand';
 
-const MainContainer = () => (
+const MainContainer = () => {
+  const cards = [
+    {
+      reference: 'nor-dijkstra',
+      effect: 'spy',
+      type: 'melee',
+      value: 4,
+      hero: false,
+    },
+    {
+      reference: 'neu-geralt',
+      effect: null,
+      type: 'melee',
+      value: 15,
+      hero: true,
+    },
+    {
+      reference: 'neu-triss',
+      effect: null,
+      type: 'melee',
+      value: 7,
+      hero: true,
+    },
+    {
+      reference: 'neu-yennefer',
+      effect: 'nurse',
+      type: 'ranged',
+      value: 7,
+      hero: true,
+    },
+    {
+      reference: 'nil-fringilla',
+      effect: null,
+      type: 'ranged',
+      value: 6,
+      hero: false,
+    },
+    {
+      reference: 'nor-catapult-1',
+      effect: null,
+      type: 'siege',
+      value: 8,
+      hero: false,
+    },
+    {
+      reference: 'nor-siegfried',
+      effect: null,
+      type: 'melee',
+      value: 5,
+      hero: false,
+    },
+    {
+      reference: 'neu-vesemir',
+      effect: null,
+      type: 'melee',
+      value: 6,
+      hero: true,
+    },
+  ];
+  
+  return (
   <Board>
-    <Card reference="nor-dijkstra" effect="spy" type="melee" defaultValue={4} value={4} />
-    <Card reference="neu-geralt" type="melee" defaultValue={15} value={15} hero />
-    <Card reference="neu-triss" type="melee" defaultValue={7} value={7} hero />
-    <Card reference="neu-yennefer" type="ranged" effect="nurse" defaultValue={7} value={7} hero />
-    <Card reference="nil-fringilla" type="ranged" defaultValue={6} value={8} />
-    <Card reference="nor-catapult-1" type="siege" effect="clone" defaultValue={8} value={7} />
-    <Card reference="neu-dandelion" type="melee" effect="warhorn" defaultValue={2} value={2} />
+    <Hand>
+      { cards.map(({ reference, effect, type, value, hero }, index) => {
+        return <Card key={index} reference={reference} effect={effect} type={type} value={value} hero={hero} />
+      })}
+    </Hand>
   </Board>
-);
+)};
 
 export { MainContainer };

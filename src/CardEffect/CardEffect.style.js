@@ -22,7 +22,6 @@ const getSize = ({ size }) => {
 };
 
 const getEffectSize = ({ size }) => {
-  console.log(size);
   return size === BIG ? BIG_EFFECT_SIZE : NORMAL_EFFECT_SIZE;
 };
 

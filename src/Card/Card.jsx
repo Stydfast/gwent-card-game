@@ -6,7 +6,7 @@ import { CardEffect } from '../CardEffect';
 import { CardType } from '../CardType';
 
 const Card = ({ reference, defaultValue, value, effect, type, hero }) => (
-  <CardBackground reference={reference}>
+  <CardBackground reference={reference} >
     {hero ? (
       <CardPowerHero defaultValue={defaultValue} value={value} />
     ) : (
