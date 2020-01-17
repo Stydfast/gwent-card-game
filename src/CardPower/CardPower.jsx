@@ -3,10 +3,10 @@ import { getPowerBalance } from './CardPower.utils';
 import { CardPowerBackground } from './CardPowerBackground.style';
 
 const CardPower = props => {
-  let { value, size } = props;
+  let { value, size, className } = props;
 
   return (
-    <CardPowerBackground size={size} powerBalance={getPowerBalance(props)}>
+    <CardPowerBackground className={className} size={size} powerBalance={getPowerBalance(props)}>
       {value}
     </CardPowerBackground>
   );

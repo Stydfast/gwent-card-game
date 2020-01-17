@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import CardPowerHeroBackgroundImage from './images/card-power-hero-background.png';
 
 const BIG = 'big';
 const NORMAL_SIZE = '25px';
@@ -7,10 +6,10 @@ const NORMAL_FONT_SIZE = '16px';
 const NORMAL_BG_SIZE = '64px';
 const NORMAL_TOP = '8px';
 const NORMAL_LEFT = '5px';
-const BIG_SIZE = '25px';
-const BIG_FONT_SIZE = '16px';
-const BIG_BG_SIZE = '64px';
-const BIG_TOP = '8px';
+const BIG_SIZE = '95px';
+const BIG_FONT_SIZE = '50px';
+const BIG_BG_SIZE = '190px';
+const BIG_TOP = '13px';
 const BIG_LEFT = '5px';
 
 const getSize = ({ size }) => {
@@ -50,7 +49,7 @@ const CardPowerHeroBackground = styled.div`
   height: ${props => getBackgroundSize(props)};
   width: ${props => getBackgroundSize(props)};
   background-size: contain;
-  background-image: url('${CardPowerHeroBackgroundImage}');
+  background-image: url('assets/images/misc/card-power-hero-background.png');
   position: relative;
   top: -5px;
   left: -2px;

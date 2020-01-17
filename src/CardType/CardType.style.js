@@ -1,17 +1,10 @@
 import styled from 'styled-components';
-import {
-  CardTypeBackgroundImage,
-  CardTypeMeleeImage,
-  CardTypeRangedImage,
-  CardTypeSiegeImage,
-  CardTypeMeleeRangedImage,
-} from './images';
 
 const BIG = 'big';
 const NORMAL_SIZE = '28px';
-const BIG_SIZE = '50px';
+const BIG_SIZE = '80px';
 const NORMAL_TYPE_SIZE = '19px';
-const BIG_TYPE_SIZE = '35px';
+const BIG_TYPE_SIZE = '45px';
 
 const getSize = ({ size }) => {
   return size === BIG ? BIG_SIZE : NORMAL_SIZE;
@@ -27,7 +20,7 @@ const CardTypeBackground = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('${CardTypeBackgroundImage}');
+  background-image: url('assets/images/types/card-type-background.png');
   background-size: contain;
 `;
 
@@ -38,19 +31,19 @@ const Type = styled.div`
 `;
 
 const CardTypeMelee = styled(Type)`
-  background-image: url('${CardTypeMeleeImage}');
+  background-image: url('assets/images/types/card-type-melee.png');
 `;
 
 const CardTypeRanged = styled(Type)`
-  background-image: url('${CardTypeRangedImage}');
+  background-image: url('assets/images/types/card-type-ranged.png');
 `;
 
 const CardTypeSiege = styled(Type)`
-  background-image: url('${CardTypeSiegeImage}');
+  background-image: url('assets/images/types/card-type-siege.png');
 `;
 
 const CardTypeMeleeRanged = styled(Type)`
-  background-image: url('${CardTypeMeleeRangedImage}');
+  background-image: url('assets/images/types/card-type-melee-ranged.png');
 `;
 
 export { CardTypeBackground, CardTypeMelee, CardTypeRanged, CardTypeSiege, CardTypeMeleeRanged };

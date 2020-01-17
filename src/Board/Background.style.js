@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import BoardBackground from './images/board-background.png';
 
 const Background = styled.div`
-  background: url('${BoardBackground}');
+  background: url('assets/images/misc/board-background.png');
   height: 1080px;
   width: 1920px;
 `;
