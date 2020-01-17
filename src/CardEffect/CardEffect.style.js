@@ -1,21 +1,10 @@
 import styled from 'styled-components';
-import {
-  CardEffectAgileImage,
-  CardEffectCloneImage,
-  CardEffectImproveImage,
-  CardEffectMusterImage,
-  CardEffectNurseImage,
-  CardEffectScorchImage,
-  CardEffectSpyImage,
-  CardEffectWarhornImage,
-  CardEffectBackgroundImage,
-} from './images';
 
 const BIG = 'big';
 const NORMAL_SIZE = '28px';
-const BIG_SIZE = '50px';
+const BIG_SIZE = '80px';
 const NORMAL_EFFECT_SIZE = '24px';
-const BIG_EFFECT_SIZE = '46px';
+const BIG_EFFECT_SIZE = '60px';
 
 const getSize = ({ size }) => {
   return size === BIG ? BIG_SIZE : NORMAL_SIZE;
@@ -32,7 +21,7 @@ const CardEffectBackground = styled.div`
   align-items: center;
   justify-content: center;
   background-size: contain;
-  background-image: url('${CardEffectBackgroundImage}');
+  background-image: url('assets/images/effects/card-effect-background.png');
 `;
 
 const Effect = styled.div`
@@ -43,35 +32,35 @@ const Effect = styled.div`
 `;
 
 const CardEffectAgile = styled(Effect)`
-  background-image: url('${CardEffectAgileImage}');
+  background-image: url('assets/images/effects/card-effect-agile.png');
 `;
 
 const CardEffectClone = styled(Effect)`
-  background-image: url('${CardEffectCloneImage}');
+  background-image: url('assets/images/effects/card-effect-clone.png');
 `;
 
 const CardEffectImprove = styled(Effect)`
-  background-image: url('${CardEffectImproveImage}');
+  background-image: url('assets/images/effects/card-effect-improve.png');
 `;
 
 const CardEffectMuster = styled(Effect)`
-  background-image: url('${CardEffectMusterImage}');
+  background-image: url('assets/images/effects/card-effect-muster.png');
 `;
 
 const CardEffectNurse = styled(Effect)`
-  background-image: url('${CardEffectNurseImage}');
+  background-image: url('assets/images/effects/card-effect-nurse.png');
 `;
 
 const CardEffectScorch = styled(Effect)`
-  background-image: url('${CardEffectScorchImage}');
+  background-image: url('assets/images/effects/card-effect-scorch.png');
 `;
 
 const CardEffectSpy = styled(Effect)`
-  background-image: url('${CardEffectSpyImage}');
+  background-image: url('assets/images/effects/card-effect-spy.png');
 `;
 
 const CardEffectWarhorn = styled(Effect)`
-  background-image: url('${CardEffectWarhornImage}');
+  background-image: url('assets/images/effects/card-effect-warhorn.png');
 `;
 
 export {

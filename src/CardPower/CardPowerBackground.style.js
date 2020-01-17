@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 import { getColorFromValue } from './CardPower.utils';
-import CardPowerBackgroundImage from './images/card-power-background.png';
 
 const BIG = 'big';
 const NORMAL_SIZE = '34px';
-const BIG_SIZE = '50px';
+const BIG_SIZE = '100px';
 const NORMAL_FONT_SIZE = '16px';
-const BIG_FONT_SIZE = '28px';
+const BIG_FONT_SIZE = '50px';
 
 const getSize = ({ size }) => {
   return size === BIG ? BIG_SIZE : NORMAL_SIZE;
@@ -20,8 +19,8 @@ const CardPowerBackground = styled.div`
   height: ${props => getSize(props)};
   width: ${props => getSize(props)};
   background-size: contain;
-  background-image: url('${CardPowerBackgroundImage}');
-  color: ${props => getColorFromValue(props)}
+  background-image: url('assets/images/misc/card-power-background.png');
+  color: ${props => getColorFromValue(props)};
   text-align: center;
   line-height: ${props => getSize(props)};
   font-size: ${props => getFontSize(props)};
